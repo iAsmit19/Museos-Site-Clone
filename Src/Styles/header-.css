@@ -1,0 +1,86 @@
+
+header {
+  height: 6vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-family: 'Museos';
+  z-index: 10;
+}
+
+.header-cont {
+  height: 100%;
+  width: 100%;
+  padding-inline: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redirect-home-cont {
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.redirect-home-cont a {
+  color: var(--light);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; 
+  transition: all ease-in-out 300ms;
+}
+
+.redirect-home::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 100%;
+  transition: all ease-in-out 300ms;
+}
+
+.redirect-show::after {
+  opacity: 1;
+}
+
+.redirect-hide::after {
+  opacity: 0;
+}
+
+.redirect-move-right::after {
+  left: 100%;
+}
+
+.redirect-move-center::after {
+    left: 0%;
+}
+
+.redirect-move-left::after {
+    left: -150%;
+}
+
+.redirect-home-cont a:hover::after .uruguay-cont {
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.juan-manuel-cont {
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-elements {
+  font-size: 1.1rem;
+}

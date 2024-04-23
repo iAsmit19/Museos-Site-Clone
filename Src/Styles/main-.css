@@ -1,0 +1,84 @@
+main {
+  height: 100%;
+  width: 100%;
+  padding-top: 6vh;
+  font-family: "Museos";
+}
+
+.hero {
+  min-height: 210vh;
+  width: 100%;
+}
+
+.hero-title {
+  height: 47vh;
+  width: 100%;
+  padding: 1vw;
+}
+
+.hero-title-cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hero-title-cont h1 {
+  font-size: 8.5rem;
+  line-height: 7.5rem;
+}
+
+.hero-images {
+  height: 54vh;
+  width: 100%;
+}
+
+.hero-images-cont {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.h-i-1 img {
+  object-position: 0% 35%;
+  scale: 2;
+}
+
+.h-i-2 img {
+  object-position: 0% 95%;
+  scale: 2;
+}
+
+.h-i-3 img {
+  object-position: 0% 15%;
+  scale: 2;
+}
+
+.image-date {
+  background-color: gray;
+  height: 40vh;
+}
+
+.image-date-cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
